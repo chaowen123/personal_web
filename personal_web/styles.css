@@ -1,0 +1,198 @@
+/*The color of the body*/
+body {
+    background: linear-gradient(45deg, #00c9ff, #92fe9d, #00c9ff, #92fe9d);
+    background-size: 400% 400%;
+    animation: gradientAnimation 18s ease infinite;
+    margin: 0;
+    padding-bottom:none;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.navbar {
+    background-color: transparent !important;
+}
+
+/*The animation part of the body 1*/
+.main_frame {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 90%;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.one,
+.two {
+    flex: 1;
+    margin: 10px;
+}
+
+.one img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.two img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#animation-frame {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 100%;
+    min-height: 100%;
+}
+
+/*The project part of the body 2*/
+.second_frame {
+    margin-top: 40px;
+    align-items: stretch;
+    justify-content: center;
+    text-align: center;
+    height: 360px;
+    width: 91%;
+    display: grid;
+    gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel {
+    height: 100%;
+}
+
+.carousel-item img {
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    /* max-width: 100%;
+    min-height: 100%; */
+}
+
+
+
+.tech-hr {
+    border: none;
+    height: 8px;
+    /* Increase the height to give it an elliptical appearance */
+    background: linear-gradient(90deg, #FF9A9E, #FAD0C4, #A18CD1, #FBC2EB, #FAD0C4);
+    /* Gradient for cute-tech effect */
+    border-radius: 20px;
+    /* High border-radius for an elliptical shape */
+    box-shadow: 0 0 15px rgba(255, 154, 158, 0.8), 0 0 30px rgba(250, 208, 196, 0.6);
+    /* Glow effect */
+    margin: 20px auto;
+    width: 70%;
+    position: relative;
+}
+
+
+.proj {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.5vw; 
+}
+
+.paragraph-container {
+    margin-bottom: 10px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 30px;
+    color: hwb(0 19% 80%);
+    text-align: center;
+}
+
+.prj-mod {
+    margin-top: 40px;
+    align-items: stretch;
+    justify-content: center;
+    height: 360px;
+    width: 70%;
+    margin: auto;
+}
+
+
+li {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.custom-hr-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .custom-hr {
+    width: 40%;
+    height: 1px;
+    background-color: black;
+    border: 1px;
+  }
+
+  .hr-text {
+    padding: 0 10px;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 20px;
+    color: hsl(0, 0%, 2%);
+  }
+
+  .custom-hr-right {
+    width: 40%;
+    height: 1px;
+    background-color: black;
+    border: 1px;
+  }
+
+  .footer {
+    background: linear-gradient(45deg, #00c9ff, #92fe9d);
+    padding: 40px 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: none;
+  }
+
+  .footer .copyright {
+    margin-top: 20px;
+    font-size: 14px;
+    color: hwb(0 19% 80%);
+  }
